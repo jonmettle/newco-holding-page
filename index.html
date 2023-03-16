@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Coming Soon</title>
+    <title>NatWest Boxed | Coming soon</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="NatWest Boxed - Coming soon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: black;
+            background-image: url("coming_soon_background_xsml.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
             padding: 0;
             margin: 0;
+            font-family: 'Kodchasan', sans-serif;
         }
 
         .content {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 0 0 0 200px;
             color: white;
-            font-family: sans-serif;
-            height: 100vh;
-            min-height: 400px;
-            font-size: 2rem;
+            min-height: 100vh;
+        }
+
+        .img {
+            width: 430px;
+        }
+
+        .title {
+            font-size: 3.75rem;
+            font-weight: normal;
+            padding-left: 30px;
+        }
+
+        @media (max-width: 720px) {
+            .img {
+                width: 230px;
+            }
+
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .content {
+                padding: 0 0 0 30px;
+            }
         }
     </style>
 </head>
 <body>
 <div class="content">
-    <strong>COMING SOON</strong>
+    <div id="logo" class="logo">
+        <img class="img" src="logo.png" alt="NatWest Boxed"/>
+    </div>
+    <div id="copy" class="copy">
+        <h1 class="title">Coming soon</h1>
+    </div>
 </div>
 </body>
 </html>
